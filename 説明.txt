@@ -1,0 +1,13 @@
+説明
+
+操作方法
+開始：プレイボール
+打つ：何かのキー押し
+一次停止：タイム
+再開：プレイ
+得点集計：スコア
+試合終了：ゲームセット
+
+お借りした画像
+putiya.com/html/sport/baseball_02_18.html
+livedoor.brogimg.jp/dounavi2012-hirosima/imgs/1/4/148af4a6.png

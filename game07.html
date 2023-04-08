@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja">
+<body style="background-color:lightgreen;">
+
+<div class="cquarter-circle-1"></div>
+<head>
+
+</style>
+</head>
+
+<h11>野球ゲーム<BR></h11>
+<head>
+<style>
+	h11
+	{
+		position: absolute;
+		top: 20px;
+		left: 55px;
+		color: orange;
+		font-size: 80px;
+		font-weight: 400;
+		font-family: "ＭＳ ゴシック";
+		//background: blue;
+	}
+</style>
+</head>
+
+<h12 id="kekka2"></h12>
+<head>
+<style>
+	h12
+	{
+		position: absolute;
+		top: 300px;
+		left: 550px;
+		color: blue;
+		font-size: 120px;
+		font-weight: 400;
+		font-family: "ＭＳ ゴシック";
+		//background: blue;
+	}
+</style>
+</head>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>yakyugame</title>
+	<style type="text/css">
+		#gamecanvas {
+			position: absolute;
+			top: 120px;
+			left: 20px;
+			z-index: 1;
+		}
+	</style>
+	<script src="game07.js"></script>
+	
+</head>
+
+<body>
+<canvas id="gamecanvas" width="480" height="480"></canvas>
+
+<div id="app">
+
+<label for="text">    チーム</label>
+<label for="text">    　　1 </label>
+<label for="text">    　　2 </label>
+<label for="text">    　　3 </label>
+<label for="text">    　　4 </label>
+<label for="text">    　　5 </label>
+<label for="text">    　　6 </label>
+<label for="text">    　　7 </label>
+<label for="text">    　　8 </label>
+<label for="text">    　　9 </label>
+<label for="text">    　計 </label><br>
+
+<label for="text"> A</label>
+<input type="text" id="name" name="name" required>
+<input type="number" value=0 id="num1">
+<input type="number" value=0 id="num2">
+<input type="number" value=0 id="num3">
+<input type="number" value=0 id="num4">
+<input type="number" value=0 id="num5">
+<input type="number" value=0 id="num6">
+<input type="number" value=0 id="num7">
+<input type="number" value=0 id="num8">
+<input type="number" value=0 id="num9">
+<span class="result1">R</span><BR>
+
+<label for="text"> B</label>
+<input type="text" id="name" name="name" required>
+<input type="number" value=0 id="num10">
+<input type="number" value=0 id="num11">
+<input type="number" value=0 id="num12">
+<input type="number" value=0 id="num13">
+<input type="number" value=0 id="num14">
+<input type="number" value=0 id="num15">
+<input type="number" value=0 id="num16">
+<input type="number" value=0 id="num17">
+<input type="number" value=0 id="num18">
+<span class="result2">R</span>
+<button class="button" type="button" onclick="onClick();">スコア</button><br>
+
+<p id="kekka1"></p>
+
+<style>
+	p
+		{
+		position: absolute;
+		top: 170px;
+		left: 560px;
+		color: white;
+		font-size: 40px;
+		font-weight: 400;
+		font-family: "ＭＳ ゴシック";
+		background: red;
+	}
+</style>
+
+<button onclick="startGame()">プレイボール</button>
+<button onclick="stopGame()">タイム</button>
+<button onclick="resumeGame()">プレイ</button>
+<button onclick="overGame()">ゲームセット</button>
+
+</div>
+
+<style>
+
+#app {
+    width: 96%;
+    padding: 28px;
+    max-width: 550px;
+    margin: 20px 550px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 0px rgba(200, 200, 200, 1);
+    font-family: "Times New Roman";
+    color:white;
+    background-color:darkslategray;
+   }
+
+   input {
+   width: 33px;
+   }
+
+</style>
+</body>
+</html>
